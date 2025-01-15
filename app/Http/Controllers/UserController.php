@@ -7,16 +7,13 @@ use App\Models\User;
 class UserController extends Controller
 {
     /**
-     * index
+     * Menampilkan daftar pengguna
      *
-     * @return void
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //get users form Model
         $users = User::latest()->get();
-
-        //passing user to view
         return view('users', compact('users'));
     }
 }

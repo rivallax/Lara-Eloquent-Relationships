@@ -84,6 +84,7 @@
                                 <th>Judul Post</th>
                                 <th>Komentar</th>
                             </tr>
+                            
                         </thead>
                         <tbody>
                             @foreach($posts as $post)
