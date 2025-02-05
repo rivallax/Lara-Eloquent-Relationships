@@ -7,6 +7,7 @@ Route::get('/', function () {
 });
 
 /**
+ * menuju path user
  * @path /users
  * @method GET
  */
