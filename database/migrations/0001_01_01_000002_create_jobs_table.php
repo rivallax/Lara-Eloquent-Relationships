@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
+
         Schema::create('jobs', function (Blueprint $table) {
-            $table->id();
-            $table->string('queue')->index();
-            $table->longText('payload');
-            $table->unsignedTinyInteger('attempts');
-            $table->unsignedInteger('reserved_at')->nullable();
+            $table->id(); // primary key
+            $table->string('queue')->index(); // queue name
+            $table->longText('payload'); // job data
+            $table->unsignedTinyInteger('attempts'); // number of attempts
+            $table->unsignedInteger('reserved_at')->nullable(); // timestamp of last attempt
             $table->unsignedInteger('available_at');
             $table->unsignedInteger('created_at');
         });
@@ -24,9 +25,9 @@ return new class extends Migration
         Schema::create('job_batches', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->string('name');
-            $table->integer('total_jobs');
+            $table->integer('total_jobs'); // total number of jobs
             $table->integer('pending_jobs');
-            $table->integer('failed_jobs');
+            $table->integer('failed_jobs'); //  
             $table->longText('failed_job_ids');
             $table->mediumText('options')->nullable();
             $table->integer('cancelled_at')->nullable();
