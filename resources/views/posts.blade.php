@@ -71,6 +71,7 @@
         <div class="container my-5">
             <div class="card">
                 <div class="card-header text-center">
+                    {{-- MANNY EXAMPLE --}}
                     <h3 class="mb-0">Laravel Eloquent Relationship</h3>
                     <p class="mb-0">One To Many Example</p>
                 </div>

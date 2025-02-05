@@ -58,6 +58,7 @@
                     <h4 class="text-center mb-4 text-primary">TABLE USER  <strong>|| MANNY TO MANNY & ONE TO ONE </strong></h4>
                     <table class="table table-bordered table-hover">
                         <thead class="table-primary text-center">
+                            {{-- SEED USER --}}
                             <tr>
                                 <th>Nama User</th>
                                 <th>Nomor Telepon</th>
@@ -89,6 +90,7 @@
             </div>
         </div>
     </div>
+    {{-- footer style --}}
     <footer class="footer">
         <p>© 2025 <strong>Muhammad Rivaldi akbar</strong>. All rights reserved. Visit us at <a href="https://www.santrikoding.com">rival</a></p>
     </footer>
